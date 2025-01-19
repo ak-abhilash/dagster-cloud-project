@@ -16,4 +16,5 @@ Project using Dagster and DuckDB
 
 ## Screenshots
 ![Screenshot 2025-01-19 155117](https://github.com/user-attachments/assets/b40731c2-a7d7-4902-9762-af92cabcf6d3)
+
 ![Screenshot 2025-01-19 203402](https://github.com/user-attachments/assets/4eb2273c-d07a-403d-b117-74820204a7ad)
