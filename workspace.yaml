@@ -1,0 +1,7 @@
+load_from:
+  - python_file:
+      relative_path: pipelines/etl_pipeline.py
+      working_directory: /opt/dagster-cloud-project
+  - python_file:
+      relative_path: pipelines/simple_test.py
+      working_directory: /opt/dagster-cloud-project

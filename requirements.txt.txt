@@ -1,0 +1,8 @@
+dagster
+dagit
+boto3
+duckdb
+dagster-duckdb
+dagster-aws
+dagster-webserver==1.5.13 
+

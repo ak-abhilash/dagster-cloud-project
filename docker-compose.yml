@@ -1,0 +1,23 @@
+services:
+  dagster-dev:
+    build: .
+    container_name: dagster-cloud-project-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./pipelines:/opt/dagster-cloud-project/pipelines
+      - ./dagster_home:/opt/dagster-cloud-project/dagster_home
+      - ./workspace.yaml:/opt/dagster-cloud-project/workspace.yaml
+      - ./data:/opt/dagster-cloud-project/data
+    env_file:
+      - .env
+    environment:
+      - DAGSTER_HOME=/opt/dagster-cloud-project/dagster_home
+      - PYTHONPATH=/opt/dagster-cloud-project
+      - DATA_PATH=/opt/dagster-cloud-project/data
+    networks:
+      - dagster-network
+
+networks:
+  dagster-network:
+    driver: bridge
